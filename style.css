@@ -1,0 +1,133 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f4f4f4;
+	margin: 0;
+}
+
+.form-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #ccc;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 800px;
+	width: 100%;
+}
+
+.text-blocks {
+	display: flex;
+	flex-direction: column;
+}
+.text-block:first-child {
+	text-decoration: line-through;
+  margin-bottom: 2px;
+}
+.text-block:nth-child(2) {
+	background-color: #4192d4;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.text-block:last-child {
+  padding: 15px;
+  background-color: #00ffd5;
+  border: 2px dashed #07477a;
+  border-radius: 10px;
+  max-width: max-content;
+  margin: 0 auto;
+  font-size: 28px;
+}
+
+.text-block {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.image-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.image-block img {
+	max-width: 250px;
+	max-height: 200px;
+  width: 100%;
+}
+
+.form-block {
+	background-color: rgb(49, 116, 184);
+	flex: 1;
+	padding: 10px;
+	border-radius: 6px;
+	max-width: 450px;
+	margin-left: auto;
+}
+
+.form {
+	text-align: center;
+}
+
+.form-block h2 {
+	margin-bottom: 20px;
+	color: #111;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	max-width: 280px;
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.submit-button {
+	background-color: yellow;
+	border: 1px solid #ccc;
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	max-width: 280px;
+	width: 100%;
+}
+
+.submit-button:hover {
+	border-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+	.form-wrapper {
+		flex-direction: column;
+    max-width: 500px;
+	}
+
+	.text-blocks,
+	.image-block {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+  .form-block {
+    margin-left: 0;
+  }
+  .image-block {
+    order: -1;
+  }
+}

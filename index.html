@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="form-wrapper">
+			<div class="text-blocks">
+				<div class="text-block" >Обычная цена 1449р</div>
+				<div class="text-block">Цена по акции<br> 149р</div>
+				<div class="text-block">Остаток товара на 11.11.2012</div>
+				<div class="text-block">58</div>
+			</div>
+			<div class="image-block">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghU0bmAl6W5iciaL2lxzCE6zHV2jR1v6K_w&s" alt="Енот" />
+			</div>
+			<div class="form-block">
+				<h2>Введите ваши данные ниже.</h2>
+				<form id="offer-form" class="form">
+					<input type="hidden" name="sub1" value="123" />
+					<input type="hidden" name="utm_source" value="321" />
+					<input type="hidden" name="ip" value="192.168.1.1" />
+					<div class="form-group">
+						<input type="text" id="name" name="name" placeholder="Имя" required />
+					</div>
+					<div class="form-group">
+						<input type="tel" id="phone" name="phone" placeholder="Телефон" required />
+					</div>
+					<button type="submit" class="submit-button">Получить за 149 руб.</button>
+				</form>
+			</div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
